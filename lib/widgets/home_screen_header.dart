@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:mobileapp/util/constants.dart';
 
-class Header extends StatefulWidget {
-  const Header({Key? key, required this.name}) : super(key: key);
+class HomeScreenHeader extends StatefulWidget {
+  const HomeScreenHeader({Key? key, required this.name}) : super(key: key);
 
   final String name;
 
   @override
-  State<Header> createState() => _HeaderState();
+  State<HomeScreenHeader> createState() => _HomeScreenHeaderState();
 }
 
-class _HeaderState extends State<Header> {
+class _HomeScreenHeaderState extends State<HomeScreenHeader> {
   late final TextEditingController _controller;
 
   @override
@@ -34,7 +34,7 @@ class _HeaderState extends State<Header> {
     return Stack(
       children: <Widget>[
         SvgPicture.asset(
-          'public/images/header.svg',
+          'public/images/HomeScreenHeader.svg',
           allowDrawingOutsideViewBox: true,
         ),
         Positioned(
