@@ -1,9 +1,3 @@
-// video_link
-// title
-// description
-// List<FAQ>
-// doubt_link
-
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
